@@ -20,18 +20,18 @@ lesson03
 'use strict';
 
 let incom = prompt('Ваш месячный доход?');
-console.log(incom)
+console.log(incom);
 
 let addExpenses = prompt('Перечислите возможные расходы за расчитываемый период через запятую');
 
 let deposit = confirm('Есть ли у вас депозит в банке?');
 
 let expenses1 = prompt('Введите обязательную статью расходов', 'foods');
-console.log(expenses1)
+console.log(expenses1);
 let amount1 = prompt('Во сколько это обойдётся?');
 console.log(amount1);
 let expenses2 = prompt('Введите обязательную статью расходов');
-console.log(expenses2)
+console.log(expenses2);
 let amount2 = prompt('Во сколько это обойдётся?');
 console.log(amount2);
 
