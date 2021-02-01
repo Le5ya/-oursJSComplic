@@ -20,7 +20,7 @@ lesson03
 'use strict';
 
 let incom = prompt('Ваш месячный доход?');
-console.log(incom)
+console.log(incom);
 
 let addExpenses = prompt('Перечислите возможные расходы за расчитываемый период через запятую');
 
