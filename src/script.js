@@ -16,51 +16,44 @@ for(i=1; i<=3; i++) {
 console.log(powNum);
 console.log(powNum.toString()[0]);
 console.log(powNum.toString()[1]);
-lesson03
-'use strict';
+// lesson03-1
+// a.
 
-let incom = prompt('Ваш месячный доход?');
-console.log(incom);
+ let langEntr = prompt('Enter lang');
 
-let addExpenses = prompt('Перечислите возможные расходы за расчитываемый период через запятую');
-
-let deposit = confirm('Есть ли у вас депозит в банке?');
-
-let expenses1 = prompt('Введите обязательную статью расходов', 'foods');
-console.log(expenses1)
-let amount1 = prompt('Во сколько это обойдётся?');
-console.log(amount1);
-let expenses2 = prompt('Введите обязательную статью расходов');
-console.log(expenses2)
-let amount2 = prompt('Во сколько это обойдётся?');
-console.log(amount2);
-
-let budgetMonth = incom - amount1 - amount2;
-console.log(budgetMonth);
-
-let mission = prompt('Цель:', 99999.5);
-console.log("Цель заработать" +" " + mission + " " + "рублей");
-let period = Math.ceil(mission / budgetMonth );
-console.log("Период равен"+" " + period +" " + "месяцев");
-
-let budgetDay = budgetMonth / 30;
-console.log(Math.floor(budgetDay));
-
-if (budgetDay > 1200) {
-  alert("У вас высокий уровень дохода");
-} else {
- if (budgetDay > 600 && budgetDay <= 1200) {
-   alert("У вас средний уровень дохода");
+ if (langEntr == 'ru') {
+    alert ('пн, вт, ср, чт, пт, сб, вс');
  } else {
-  if (budgetDay >= 0 && budgetDay < 600) {
-   alert("К сожалению у вас уровень дохода ниже среднего");
- } else {
-   if (budgetDay < 0) {
-  alert("Что то пошло не так");
-}
+  if(langEntr == 'en') {
+    alert ('mn,ts,wd, th, fr, st, sn');
+   }
+ 
  }
- } 
-} 
+// b.
+let lang = 'ru';
+// let lang = 'en';
+switch(lang){
+  case('ru'):
+  console.log('пн', 'вт', 'ср', 'чт', 'пт', 'сб', 'вс');
+  break;
+  case('en'):
+  console.log('mn', 'ts', 'wd', 'th', 'fr', 'st', 'sn');
+
+}
+// c.
+let langRu =['пн', 'вт', 'ср', 'чт', 'пт', 'сб', 'вс'];
+let langEn =['mn', 'ts', 'wd', 'th', 'fr', 'st', 'sn'];
+let arr = [langRu, langEn];
+console.log(arr[0]);
+console.log(arr[1]);
+
+// lesson03-2
+
+ let namePerson = 'Артем';
+// let namePerson = 'Максим';
+// let namePerson = 'Fox';
+(namePerson == 'Артем') ? console.log("директор") : (namePerson == 'Максим')  
+? console.log("преподаватель") : console.log("студент");
 
 
 
@@ -71,10 +64,3 @@ if (budgetDay > 1200) {
 
 
 
-
-
-
-
-
-
-budgetDay
