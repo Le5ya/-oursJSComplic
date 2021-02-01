@@ -38,6 +38,7 @@ switch(lang){
   break;
   case('en'):
   console.log('mn', 'ts', 'wd', 'th', 'fr', 'st', 'sn');
+  break;
 
 }
 // c.
