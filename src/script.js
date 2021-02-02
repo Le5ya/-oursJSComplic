@@ -44,9 +44,9 @@ switch(lang){
 // c.
 let langRu =['пн', 'вт', 'ср', 'чт', 'пт', 'сб', 'вс'];
 let langEn =['mn', 'ts', 'wd', 'th', 'fr', 'st', 'sn'];
-let arr = [langRu, langEn];
-console.log(arr[0]);
-console.log(arr[1]);
+let langs = [langRu, langEn];
+console.log(langs[0]);
+console.log(langs[1]);
 
 // lesson03-2
 
@@ -55,6 +55,21 @@ console.log(arr[1]);
 // let namePerson = 'Fox';
 (namePerson == 'Артем') ? console.log("директор") : (namePerson == 'Максим')  
 ? console.log("преподаватель") : console.log("студент");
+
+function getString(str) {
+  str = prompt('write a string');
+  str = str.trim();
+  if(str.length > 30) {
+    str = str.slice(0, 30)+'...';
+    console.log(str);
+
+  }
+  
+}
+getString(str);
+
+
+
 
 
 
