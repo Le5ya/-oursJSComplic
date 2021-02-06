@@ -68,49 +68,76 @@
   
 // }
 // getString(str);
+// function makeCounter() {
+//   var currentCount = 0;
+
+//   return function() {
+//    currentCount++;
+//    return currentCount;
+//   };
+// }
+// console.log(makeCounter()) ;
+// var counter = makeCounter();
+// console.log(counter()) ;
+// console.log(counter()) ;
+// console.log(counter()); // 3
 // lesson05
-let arr = ['123', '234', '345', '456', '12345', '2345', '4567'];
- for(let i=0; i<7; i++) {
-   let str = arr[i];
-   if(str[0] == '2' || str[0] == '4') {
-     console.log(arr[i]);
-   }
- }
-// task-2
-primeloop: for(let i = 1; i < 100; i++) {
+// let arr = ['123', '234', '345', '456', '12345', '2345', '4567'];
+//  for(let i=0; i<7; i++) {
+//    let str = arr[i];
+//    if(str[0] == '2' || str[0] == '4') {
+//      console.log(arr[i]);
+//    }
+//  }
+// // task-2
+// primeloop: for(let i = 1; i < 100; i++) {
   //let prime = true
      
   
-  for(let j = 2; j < i; j++) {
-    if (i % j == 0) {
-      //i++;
-      //prime = false
-     // break
-     continue primeloop
-    }
+//   for(let j = 2; j < i; j++) {
+//     if (i % j == 0) {
+//       i++;
+//       prime = false
+//       break
+//      continue primeloop
+//     }
+//   }
+  
+//   if (!prime){
+//     continue
+//   }
+  
+//   console.log(i);
+// }
+// lesson6
+let week = ['Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота', 'Воскресенье'];
+  let i = 0;
+  let date = new Date();
+let weekDay = function() {
+   if (date.getDay() == (i + 1) % 7){
+      console.log("%c" + week[i], 'font-weight: bold');
+   } else if(i>= 5){
+     console.log("%c" + week[i], 'font-style: italic');  
+   }else {
+     console.log(week[i]);
+   }
+   i++;
+  if(i <= 6){
+    weekDay();
   }
-  /*
-  if (!prime){
-    continue
-  }
-  */
-  console.log(i);
+
+}
+weekDay();
+  
+
+
+/*
+let boldGraf = function(){
+  console.log('%c Oh my heavens! ', 'font-weight: bold');
+
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+console.log(boldGraf());
+*/
 
