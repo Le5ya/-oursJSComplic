@@ -15,19 +15,20 @@ let monthes = ['янвaря', 'февраля', 'марта', 'апреля', '�
 
 let hourses = ["час", "часа", "часов"];
 let hours;
-ddd = function(val){
-   val = x.getHours();
-if(x.val ===1) {
+
+  //  [11-19],1,[2-4] n%10<=4 ...
+  /*
+if(x.getHours() ===1 || (x.getHours % 10 ===1 && x.getHours()>20)) {
   hours = hourses[0];
-}else if( x.val < 5) {
+}else if( x.getHours() % 10 < 4 && x.getHours() % 10 !== 0) {
   hours = hourses[1];
 } else {
   hours = hourses[2];
-}
-}
+}*/
 
 let minutes = ["минута", "минуты", "минут"];
 let minute;
+/*
 if(x.getMinutes() ===1) {
   minute = minutes[0];
 }else if( x.getMinutes() < 5) {
@@ -36,9 +37,10 @@ if(x.getMinutes() ===1) {
   minute = minutes[2];
   
 }
+*/
 let seconds = ["секунда", "секунды", "секунд"]
 let second;
-
+/*
 if(x.getSeconds() ===1) {
   second = seconds[0];
 }else {
@@ -48,9 +50,29 @@ if(x.getSeconds() ===1) {
     second = seconds[2];
   }
 } 
-  
-
-
+*/
+function getEndIndex(num){
+  let endIndex;
+  let lastDig = num %10;
+  if ((num > 10 && num < 20)){
+    endIndex = 2;
+  }else if(lastDig ===1) {
+    endIndex = 0;
+  }else if( lastDig >= 2 && lastDig <= 4 ) {
+    endIndex = 1;
+  } else {
+    endIndex = 2;
+  }
+  return endIndex;
+}
+/*
+// TEST
+for (let i = 0; i < 101; i++){
+    console.log(i + " " + seconds[getEndIndex(i)]);}
+*/
+second = seconds[getEndIndex(x.getSeconds())];
+minute = minutes[getEndIndex(x.getMinutes())];
+hours = hourses[getEndIndex(x.getHours())];
 
 
 let string = "Сегодня " + x.getDate() + " " +  monthes[month] +" "+ x.getFullYear() +" года, "+ x.getHours() +" " + hours +' ' + x.getMinutes() +" " + minute +  " " + x.getSeconds() + " " + second; 
