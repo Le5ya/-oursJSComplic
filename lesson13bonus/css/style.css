@@ -1,0 +1,17 @@
+body {
+  background: #008d3d ;
+}
+#color {
+  color: #fff;
+  margin-top: 100px;  
+  margin-left: 600px;
+}
+#change {
+  background: #fff;
+  color: #008d3d;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 100px;
+  margin-left: 600px;
+  padding: 20px;
+}
