@@ -18,17 +18,17 @@
  	showResults = msgText => showResponseBlock('.dialog__response-block_ok', msgText, '#ok'),
  	showNoResults = () => showResponseBlock('.dialog__response-block_no-results'),
 
-// 	tryFilterByType = (type, values) => {
-// 		try {
-// 			const valuesArray = eval(`filterByType('${type}', ${values})`).join(", ");
-// 			const alertMsg = (valuesArray.length) ?
-// 				`Данные с типом ${type}: ${valuesArray}` :
-// 				`Отсутствуют данные типа ${type}`;
-// 			showResults(alertMsg);
-// 		} catch (e) {
-// 			showError(`Ошибка: ${e}`);
-// 		}
-// 	};
+	tryFilterByType = (type, values) => {
+		try {
+			const valuesArray = eval(`filterByType('${type}', ${values})`).join(", ");
+			const alertMsg = (valuesArray.length) ?
+				`Данные с типом ${type}: ${valuesArray}` :
+				`Отсутствуют данные типа ${type}`;
+			showResults(alertMsg);
+		} catch (e) {
+			showError(`Ошибка: ${e}`);
+		}
+	};
 
 // const filterButton = document.querySelector('#filter-btn');
 
