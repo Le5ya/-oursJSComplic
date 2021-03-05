@@ -1,9 +1,9 @@
  const filterByType = (type, ...values) => values.filter(value => typeof value === type),
 
-// 	hideAllResponseBlocks = () => {
-// 		const responseBlocksArray = Array.from(document.querySelectorAll('div.dialog__response-block'));
-// 		responseBlocksArray.forEach(block => block.style.display = 'none');
-// 	},
+	hideAllResponseBlocks = () => {
+ 		const responseBlocksArray = Array.from(document.querySelectorAll('div.dialog__response-block'));
+ 		responseBlocksArray.forEach(block => block.style.display = 'none');
+	},
 
 // 	showResponseBlock = (blockSelector, msgText, spanSelector) => {
 // 		hideAllResponseBlocks();
