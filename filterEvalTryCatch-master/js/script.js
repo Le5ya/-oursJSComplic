@@ -5,13 +5,13 @@
  		responseBlocksArray.forEach(block => block.style.display = 'none');
 	},
 
-// 	showResponseBlock = (blockSelector, msgText, spanSelector) => {
+ 	showResponseBlock = (blockSelector, msgText, spanSelector) => {
 // 		hideAllResponseBlocks();
 // 		document.querySelector(blockSelector).style.display = 'block';
 // 		if (spanSelector) {
 // 			document.querySelector(spanSelector).textContent = msgText;
 // 		}
-// 	},
+ 	},
 
 // 	showError = msgText => showResponseBlock('.dialog__response-block_error', msgText, '#error'),
 
