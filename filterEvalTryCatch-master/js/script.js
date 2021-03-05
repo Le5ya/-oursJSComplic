@@ -38,11 +38,11 @@ filterButton.addEventListener('click', e => {
 
  	if (dataInput.value === '') {
 		dataInput.setCustomValidity('Поле не должно быть пустым!');
-		showNoResults();}
-	// } else {
-	// 	dataInput.setCustomValidity('');
-	// 	e.preventDefault();
-	// 	tryFilterByType(typeInput.value.trim(), dataInput.value.trim());
-	// }
+		showNoResults();
+	} else {
+		dataInput.setCustomValidity('');
+		e.preventDefault();
+		tryFilterByType(typeInput.value.trim(), dataInput.value.trim());
+	}
  });
 
