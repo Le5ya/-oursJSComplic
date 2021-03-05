@@ -13,9 +13,9 @@
 		}
  	},
 
-// 	showError = msgText => showResponseBlock('.dialog__response-block_error', msgText, '#error'),
+	showError = msgText => showResponseBlock('.dialog__response-block_error', msgText, '#error'),
 
-// 	showResults = msgText => showResponseBlock('.dialog__response-block_ok', msgText, '#ok'),
+ 	showResults = msgText => showResponseBlock('.dialog__response-block_ok', msgText, '#ok'),
  	showNoResults = () => showResponseBlock('.dialog__response-block_no-results'),
 
 // 	tryFilterByType = (type, values) => {
