@@ -30,7 +30,7 @@
 		}
 	};
 
-// const filterButton = document.querySelector('#filter-btn');
+ const filterButton = document.querySelector('#filter-btn');
 
 // filterButton.addEventListener('click', e => {
 // 	const typeInput = document.querySelector('#type');
