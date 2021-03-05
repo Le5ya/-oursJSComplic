@@ -32,9 +32,9 @@
 
  const filterButton = document.querySelector('#filter-btn');
 
-// filterButton.addEventListener('click', e => {
-// 	const typeInput = document.querySelector('#type');
-// 	const dataInput = document.querySelector('#data');
+filterButton.addEventListener('click', e => {
+ 	const typeInput = document.querySelector('#type');
+ 	const dataInput = document.querySelector('#data');
 
 // 	if (dataInput.value === '') {
 // 		dataInput.setCustomValidity('Поле не должно быть пустым!');
@@ -44,5 +44,5 @@
 // 		e.preventDefault();
 // 		tryFilterByType(typeInput.value.trim(), dataInput.value.trim());
 // 	}
-// });
+ });
 
